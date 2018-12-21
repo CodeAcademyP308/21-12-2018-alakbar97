@@ -1,0 +1,217 @@
+*{
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+    transition: 0.5s;
+}
+.container{
+    width: 1200px;
+    margin: 0 auto;
+}
+body{
+    font-family: 'Open Sans','Helvetica Neue',Arial,sans-serif;
+    margin: 0;
+    padding: 0;
+}
+header {
+    height: 100vh;
+    background-size: cover;
+    background-position: center center;
+    background: url("img/header.jpg")
+}
+.navbar{
+    background: transparent;
+    display: flex;
+    justify-content: space-between;
+    padding: 25px 0;
+}
+.navbar .logo a{
+    font-size: 25px;
+    color: rgba(255,255,255,.7);
+    transition: 0.5s;
+    line-height: 2;
+}
+.navbar .logo a:hover{
+    color: white;
+  
+}
+
+.navbar ul li{
+    list-style: none;
+    display: inline-block;
+}
+.navbar ul li a{
+
+    margin-left: 25px;
+    color: rgba(255,255,255,.7);
+}
+.navbar ul li a:hover{
+    color: white;
+}
+.masthead{
+    position: relative;
+    width: 100%;
+    height: 500px;
+    
+
+}
+.masthead .content{
+ width: 100%;
+ position: absolute;
+ left: 50%;
+ top: 50%;
+ transform: translate(-50%,-50%)
+}
+.title h1{
+    color: white;
+   font-size: 50px;
+   text-align: center;
+}
+.line{
+    position: absolute;
+    left: 50%;
+    top: 70%;
+    transform: translate(-50%);
+    background: #f05f40;
+    height: 2px;
+    width: 30px;
+}
+.text{
+    margin-top: 30px;
+}
+.text p{
+    font-weight: 300;
+    color: rgba(255,255,255,.7);
+    text-align: center;
+}
+.find a{
+    background: #f05f40;
+    color: white;
+    border-radius: 300px;
+    font-size: 15px;
+    padding: 15px 19px;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%)
+}
+.find a:hover{
+    background-color: #ee4b28!important;
+}
+#about{
+    width: 100%;
+    background-color: #f05f40!important;
+    padding: 50px 0px;
+    position: relative;
+
+}
+#about .content{
+    width: 100%;
+    
+}
+.line2{
+    background: white;
+    height: 2px;
+    width: 30px;
+    transform: translate(-50%);
+    position: absolute;
+    left: 50%;
+    
+}
+.started a{
+    padding: 15px 25px;
+    background-color: white;
+    border-radius: 300px;
+    position: absolute;
+    left: 50%;
+    top: 70%;
+    transform: translate(-50%);
+}
+.content h1{
+    color: white;
+    text-align: center
+}
+.content p{
+    color: white;
+    text-align: center;
+}
+
+.main{
+display: flex;
+flex-wrap: wrap;
+}
+.photo{
+    width: calc(100%/3);
+    position: relative;
+    
+}
+.photo:hover .overlay{
+opacity: 0.8;
+
+}
+img{
+    width: 100%;
+    height: 100%;
+}
+.overlay{
+    position: absolute;
+    left: 0;
+    top: 0;
+    background: #f05f40;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity:0;
+    transition: 0.5s;
+   
+}
+.overlay .title{
+  
+}
+i{
+    color: white;
+    font-size: 20px;
+}
+.overlay h4{
+    color: white;
+    font-size: 30px;
+    margin:  0 0 10px 0;
+   text-align: center;
+}
+.overlay p{
+    color: white;
+    text-align: center;
+}
+
+/* Main codeu end */
+
+
+#training .photo{
+   margin: 0 auto;
+   border: 2px solid black;
+   overflow:hidden;
+   position: relative;
+}
+#training .photo:hover img{
+    transform: scale(1.2);
+}
+#training .photo:hover a{
+   bottom: 40px;
+   opacity: 1;
+}
+#training .photo img{
+   transition: 0.5s;
+}
+#training .photo a{
+    position: absolute;
+    bottom: -50px;
+    opacity: 0;
+    left: 50%;
+    transform: translate(-50%);
+    color: black;
+    background: white;
+    padding: 15px 25px;
+    transition: 0.5s;
+}
